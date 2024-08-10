@@ -7,7 +7,7 @@
 #include "AuraCharacter.generated.h"
 
 /**
- * 
+ * 这是玩家类
  */
 UCLASS()
 class AURA_API AAuraCharacter : public AAuraCharacterBase
