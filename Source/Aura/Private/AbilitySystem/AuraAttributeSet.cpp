@@ -2,13 +2,18 @@
 
 
 #include "AbilitySystem/AuraAttributeSet.h"
-#include "AbilitySystemComponent.h"
 #include "Net/UnrealNetwork.h"
 
 
 UAuraAttributeSet::UAuraAttributeSet()
 {
-	
+	/* Init Attribute Value */
+	// 这些初始化函数都是.h文件中的宏生成的
+	InitHealth(100.f);
+	InitMaxHealth(100.f);
+	InitMana(50.f);
+	InitMaxMana(50.f);
+	/* End Init Attribute Value */
 }
 
 void UAuraAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
